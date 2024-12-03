@@ -17,6 +17,34 @@ class Calculator:
             raise ZeroDivisionError("Errore generico da documentare melgio")
         except Exception as e:
             raise Exception(f"Error: {str(e)}")
+        
+        #ripetizione
+        try:
+            # Replace % with /100 for percentage calculation
+            expr = expr.replace('%', '/100')
+            allowed_chars = '1234567890.*/%-+() '
+            expr = ''.join(filter(lambda x: x in allowed_chars, expr))
+            return eval(expr)
+        except ValueError:
+            raise ValueError("Invalid expression")
+        except ZeroDivisionError:
+            raise ZeroDivisionError("Errore generico da documentare melgio")
+        except Exception as e:
+            raise Exception(f"Error: {str(e)}")
+        
+        #ripetizione
+        try:
+            # Replace % with /100 for percentage calculation
+            expr = expr.replace('%', '/100')
+            allowed_chars = '1234567890.*/%-+() '
+            expr = ''.join(filter(lambda x: x in allowed_chars, expr))
+            return eval(expr)
+        except ValueError:
+            raise ValueError("Invalid expression")
+        except ZeroDivisionError:
+            raise ZeroDivisionError("Errore generico da documentare melgio")
+        except Exception as e:
+            raise Exception(f"Error: {str(e)}")
 
     def __init__(self, master):
         assert False
