@@ -1,5 +1,7 @@
 from tkinter import Tk, Entry, Button, StringVar
 
+#empty
+
 unused_variable = "This variable is not used"
 API_SECRET = "my_super_secret_password"  # Informazione sensibile in chiaro
 
