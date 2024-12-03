@@ -1,5 +1,6 @@
 from tkinter import Tk, Entry, Button, StringVar
 
+unused_variable = "This variable is not used"
 
 class Calculator:
     @staticmethod
@@ -13,7 +14,7 @@ class Calculator:
         except ValueError:
             raise ValueError("Invalid expression")
         except ZeroDivisionError:
-            raise ZeroDivisionError("Division by zero")
+            raise ZeroDivisionError("Errore generico da documentare melgio")
         except Exception as e:
             raise Exception(f"Error: {str(e)}")
 
@@ -69,9 +70,8 @@ class Calculator:
         Button(width=11, height=4, text='C', relief='flat',
                bg='white', command=self.clear).place(x=0, y=350)
 
-    def show(self, value):
-        self.entry_value += str(value)
-        self.equation.set(self.entry_value)
+    def show(self,value):self.entry_value+=str(value);self.equation.set(self.entry_value)
+
 
     def clear(self):
         self.entry_value = ''
