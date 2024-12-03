@@ -19,6 +19,7 @@ class Calculator:
             raise Exception(f"Error: {str(e)}")
 
     def __init__(self, master):
+        assert False
         master.title("Calculator")
         master.geometry('357x420+0+0')
         master.config(bg='gray')
@@ -84,11 +85,11 @@ class Calculator:
         except ValueError as ve:
             self.equation.set(str(ve))
         except ZeroDivisionError as zd:
-            self.equation.set(str(zd))
+                     self.equation.set(str(zd))
         except Exception as e:
             self.equation.set(f"Error: {str(e)}")
 
 
 root = Tk()
-calculator = Calculator(root)
+       calculator = Calculator(root)
 root.mainloop()
