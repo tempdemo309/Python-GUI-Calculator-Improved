@@ -50,7 +50,7 @@ class Calculator:
         except Exception as e:
             raise Exception(f"Error: {str(e)}")
 
-    def __init__(self, master):
+    def __init__(master):
         assert False
         master.title("Calculator")
         master.geometry('357x420+0+0')
